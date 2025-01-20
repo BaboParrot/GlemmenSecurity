@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder</title>
+    <link rel="stylesheet" text="text.css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="no_banner">
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="Bilder/logo_hvit.png" class="logo">
+                </a>
+               
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="artikkelside.html">Nyhet</a></li>
+                    <li class="active"><a href="bildeside.html" class="active">Bilder</a></li>
+                    <li><a href="#footer_scroll">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+  
+
+    <main>
+
+        <div class="space_top"></div>
+        <h2 class="bildeside_tekst">Bilder av elever fra Glemmen VGS</h2>
+        <div class="slider_1">
+            <div>
+                <img src="Bilder/Karusell_1_resize.png" class="karusell_bilde_style" alt="Elev som holder kamera">
+            </div>
+            <div>
+                <img src="Bilder/Karusell_2_resize.png" class="karusell_bilde_style" alt="Elever som gjør parkour i skolegården">
+            </div>
+            <div>
+                <img src="Bilder/Karusell_3_resize.png" class="karusell_bilde_style" alt="Elever som lager mat">
+            </div>
+            <div>
+                <img src="Bilder/Karusell_4_resize.png" class="karusell_bilde_style" alt="Elever som arbeider på pc ">
+            </div>
+          </div>
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         
+         <script>
+        $(document).ready(function(){
+            $('.slider_1').slick({
+                centerMode: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                speed: 1300,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                    breakpoint: 955,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+
+                    { 
+                    breakpoint: 768, 
+                    settings: { 
+                        slidesToShow: 2, 
+                        slidesToScroll: 1, 
+                        infinite: true, 
+                        dots: true 
+                    } 
+                    },
+
+                    {
+                    breakpoint: 580,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1,
+                        slideToScroll: 1,
+                    }
+                    }
+                ]
+            });
+        });
+          </script> <!--jeg skjønner hva som skjer her. jeg har skrevet mesteparten selv. Det som ble importet var scriptene som fikk denne scripten til å være mulig  -->
+
+          <div class="space"></div>
+
+         
+
+    </main>
+
+    <hr class="divider">
+
+    <footer id="footer_scroll" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h4>Ring oss</h4>
+                    <ul>
+                      <li><strong>Telefon:</strong> <br><a href="tel:+4769955600">69 95 56 00</a></li>
+                      <li><strong>Åpningstider:</strong> 
+                        <ul>
+                            <li>Mandag-fredag <br> kl. 08:00-15:00</li>
+                        </ul>
+                    </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="footer-column">
+                    <h4>Skriv til oss</h4>
+                    <ul>
+                      <li><strong>Epost:</strong> <a href="mailto:glemmenvgs@ofk.no">Glemmenvgs@ofk.no</a></li>
+                      <li><strong>Post:</strong> 
+                        <ul>
+                            <li> <strong> Glemmen videregående skole </strong> <br> Postboks 220 <br> 1702 Sarpsborg </li></li>
+                        </ul>
+                    </ul>
+                  </div>
+                  
+                <div class="footer-column">
+                    <h4>Besøk oss</h4>
+                    <ul>
+                        <li> <a href="https://maps.app.goo.gl/bbcCjHd3RnDi2MV46">Traraveien 13 <br> 1605 Fredrikstad</a> </li>
+                        <li><strong>Åpningstider:</strong> 
+                            <ul>
+                                <li> 15. mai - 15. september: <br> Mandag-fredag <br> kl. 08:00-15:00</li>
+                                <li> 16. september - 14. mai: <br> Mandag-fredag <br> kl. 08:00-15:45</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Våre sosiale medier</h4>
+                    <div class="Social-media-links"> 
+                        <a href="https://www.facebook.com/glemmenvgs"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.snapchat.com/add/glemmenvenn"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://www.instagram.com/glemmen_vgs/?hl=nb"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCxaxYxlfDtaSyj6UvqCebCg"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ostfold">
+                <a href="https://ofk.no/"><img src="Bilder/logo_ostfold.png"></a>
+               </div>
+        </div>
+
+    </footer>
+</body>
+</html>

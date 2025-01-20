@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8"> <!-- dette er symboler vi kan bruke. er viktig-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="navbar">
+              <div class="unstoppable">
+                <a href="index.html">
+                    <img src="Bilder/logo_hvit.png" class="logo" alt="Glemmen Videregående Skole fra en bru">
+                </a>
+              </div>
+               
+                <ul>
+                    <li class="active"><a href="index.html" class="active">Hjem</a></li>
+                    <li><a href="artikkelside.html">Nyhet</a></li>
+                    <li><a href="bildeside.html">Bilder</a></li>
+                    <li><a href="#footer_scroll">Kontakt</a></li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <h1>Velkommen til hjemmesiden vår</h1>
+                <p>Her finner du informajson om Glemmen Videregående Skole! <br> Klikk på knappen for å utforske nettsiden</p>
+                <div>
+                    <button type="button" onclick="window.location.href='#main_scroll'"><span></span>Utforsk nettsiden</button>
+                </div>
+            
+            </div>
+        </div>
+    </header>
+
+
+    <hr class="divider">
+    <main id="main_scroll">
+
+        <section> 
+            <article>
+                <h2><div style="color:  #13b4ff"> Kommer snart:</div> Elev fra IM sitt mystiske forhold til snøen</h2>
+                <img id="hell" src="Bilder/Isaac_1.jpg" alt="En elev som står i bilparkeringen til glemmen og ser søtt mot snøen">
+                <p class="mainsite_text">Isaac kjent for to ting: hans alltid perfekte hår og hans uforståelige fascinasjon for snø. Mens de fleste elever så på vinteren som en tid for kalde fingre, våte sko og...</p>
+                <button type="button" class="btn_blue" onclick="window.location.href='#article_scroll'"><span></span> Kommer snart!</button>
+            </article> 
+            <article>
+                <h2><div style="color:  #13b4ff"> Kommer snart:</div> "Jeg har aldri opplevet noe lignende før"</h2>
+                <img id="hell" src="Bilder/Solbilde_1.jpg" alt="Studenter som ser mot soloppgangen">
+                <p class="mainsite_text">Elevene fikk en helt spesiell start på dagen i dag, da en uvanlig soloppgang kastet skolen inn i et gyllent, nesten surrealistisk lys. Hendelsen, som skjedde rundt...</p>
+                <button type="button" class="btn_blue" onclick="window.location.href='#article_scroll'"><span></span> Kommer snart!</button>
+            </article>
+            <article id="article_scroll">
+                <h2><div style="color: red !important;">NYHET:</div>Skjermdrama på Glemmen VGS: Stephan og Aron i knipe </h2>
+                <img id="hell" src="Bilder/Stephan_3.jpg" alt="Elever som jobber med livesending">
+                <p class="mainsite_text">Glemmen videregående skole var i full sving denne onsdagen, der elever og lærere forberedte en live stream-sending om det populære spillet Rocket League. Stephan, en engasjert elev i medie...</p>
+
+                <button type="button" onclick="window.location.href='artikkelside.html'"><span></span> les mer...</button>
+               
+            </article>
+        </section>
+    </main>
+
+    <hr class="divider">
+    
+    <footer id="footer_scroll" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h4>Ring oss</h4>
+                    <ul>
+                      <li><strong>Telefon:</strong> <br><a href="tel:+4769955600">69 95 56 00</a></li>
+                      <li><strong>Åpningstider:</strong> 
+                        <ul>
+                            <li>Mandag-fredag <br> kl. 08:00-15:00</li>
+                        </ul>
+                    </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="footer-column">
+                    <h4>Skriv til oss</h4>
+                    <ul>
+                      <li><strong>Epost:</strong> <a href="mailto:glemmenvgs@ofk.no">Glemmenvgs@ofk.no</a></li>
+                      <li><strong>Post:</strong> 
+                        <ul>
+                            <li> <strong> Glemmen videregående skole </strong> <br> Postboks 220 <br> 1702 Sarpsborg </li>
+                        </ul>
+                     </li>
+                    </ul>
+                  </div>
+                  
+                <div class="footer-column">
+                    <h4>Besøk oss</h4>
+                    <ul>
+                     <li><strong>Adresse:</strong>
+                    <ul>
+                        <li> <a href="https://maps.app.goo.gl/bbcCjHd3RnDi2MV46">Traraveien 13 <br> 1605 Fredrikstad</a> </li>
+                    </ul></li>
+
+                        <li><strong>Åpningstider:</strong> 
+                            <ul>
+                                <li> 15. mai - 15. september: <br> Mandag-fredag <br> kl. 08:00-15:00</li>
+                                <li> 16. september - 14. mai: <br> Mandag-fredag <br> kl. 08:00-15:45</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Sosiale medier</h4>
+                    <div class="Social-media-links"> 
+                        <a href="https://www.facebook.com/glemmenvgs"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.snapchat.com/add/glemmenvenn"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://www.instagram.com/glemmen_vgs/?hl=nb"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCxaxYxlfDtaSyj6UvqCebCg"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                </div>
+            </div>
+           <div class="ostfold">
+            <a href="https://ofk.no/"><img src="Bilder/logo_ostfold.png"></a>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>
+
